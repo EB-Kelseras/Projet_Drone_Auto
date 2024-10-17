@@ -38,7 +38,7 @@ cv.destroyAllWindows()
 
 ret, mtx, dist, rvecs, tvecs = cv.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
 
-img = cv.imread('calib_radial.jpg')
+img = cv.imread('opencv_frame_24.jpg')
 h,  w = img.shape[:2]
 newcameramtx, roi = cv.getOptimalNewCameraMatrix(mtx, dist, (w,h), 1, (w,h))
 
