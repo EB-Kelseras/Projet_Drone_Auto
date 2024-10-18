@@ -1,10 +1,7 @@
 # Projet 5A:
+(documentation du répertoire)
 
-## TODO:
-### Equipe projet :
-- python opencv version : ?
-- requirements.txt -> librairies python requises
-
-### TS:
-- mettre en place dev container opencv (python3)
-- mettre en place dev container gtsam + exemple
+## Example 
+Calibrage_camera : Contient les fichiers et programmes permettant de calibrer une caméra
+Tello_Code : Contient des programmes du simulateur
+0_Ressources : Contient des documents utiles au projet (articles/codes/...)
