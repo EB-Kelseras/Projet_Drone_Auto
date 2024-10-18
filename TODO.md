@@ -1,7 +1,7 @@
 # TODO:
 ## Equipe projet :
-- [ ] python opencv version : ?
-- [ ] requirements.txt -> librairies python requises
+- [X] python opencv version
+- [X] requirements.txt -> librairies python requises
 
 ## TS:
 - [ ] mettre en place dev container opencv (python3)
