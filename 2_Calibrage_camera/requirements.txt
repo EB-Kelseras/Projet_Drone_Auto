@@ -1,0 +1,8 @@
+opencv-python==4.10.0.84
+opencv-contrib-python==4.10.0.84
+djitellopy==2.5.0
+numpy
+pygame
+pillow
+pyzbar
+av
