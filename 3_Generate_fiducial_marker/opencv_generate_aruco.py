@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# TODO: generate cubes images for a defined number of robots
+# TODO: generate equivalent file configuration for cubes
+
 # import the necessary packages
 import numpy as np
 import argparse
