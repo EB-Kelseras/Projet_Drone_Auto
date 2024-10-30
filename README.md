@@ -9,7 +9,7 @@
 ## Plan Projet Drone ARUCO TCI
 
 ## I.	Acquérir les données
-1.	<span style="color:green">Lecture de la caméra</span> 
+1.	<font color="green">Lecture de la caméra</font> 
 2.	Récupération des données inertielles de l’IMU
 ## II.	Prétraitement des données
 1.	<span style="color:green">Calibration Caméra</span>
