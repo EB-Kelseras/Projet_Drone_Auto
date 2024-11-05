@@ -1,6 +1,6 @@
 import pygame
 import numpy as np
-from parameters import RED, IMG_SIZE, SCREEN_SIZE
+from parameters import RED, IMG_SIZE, SCREEN_SIZE,cv2,np,RAD2DEG
 
 
 class Display:
@@ -9,7 +9,7 @@ class Display:
 
     LEFT_MARGIN = 5
     TOP_MARGIN = 0
-    INTER_LINE = 20
+    INTER_LINE = 15
 
     FONT_PANEL_INFO = None
 
@@ -24,16 +24,11 @@ class Display:
 
     @classmethod
     def _log(cls, title, value):
-        """ We use the title argument as key in dictionary to save the position of the log in screen"""
+        """Log marker info at a smaller font size."""
         next_line = cls.current_line + cls.INTER_LINE
         position = (cls.LEFT_MARGIN, next_line)
-        if title in cls.log_dict:
-            cls.log_dict[title]['value'] = value
-        else:
-            next_line = cls.current_line + cls.INTER_LINE
-            position = (cls.LEFT_MARGIN, next_line)
-            cls.log_dict[title] = {"pos": position, 'value': value}
-            cls.current_line = next_line
+        cls.log_dict[title] = {"pos": position, 'value': value}
+        cls.current_line = next_line
 
     @classmethod
     def _update_log(cls):
@@ -47,7 +42,7 @@ class Display:
         # Init pygame
         pygame.init()
         pygame.font.init()  # The font
-        cls.FONT_PANEL_INFO = pygame.font.Font('freesansbold.ttf', 18)
+        cls.FONT_PANEL_INFO = pygame.font.Font('freesansbold.ttf', 14)
 
         # create pygame screen
         shift_left = SCREEN_SIZE[0] - IMG_SIZE[0]
@@ -59,19 +54,36 @@ class Display:
         pass
 
     @classmethod
-    def run(cls, frame, **karg):
+    def run(cls, frame, markers):
 
-        cls.SCREEN.fill([0, 0, 0])
+        # Clear the display each frame
+        cls.SCREEN.fill((0, 0, 0))  # Fill screen with black
+        # Clear the log for each run to prevent overlapping text
+        cls.log_dict.clear()
+        cls.current_line = cls.TOP_MARGIN
 
-        # cls._log("Battery:", f"{DRONE_STATUS.battery}%")
-        for key in karg:
-            cls._log(f"{key}: ", f"{karg[key]}")
+        for idx, marker in enumerate(markers):
+            if marker.id == -1:
+                continue  # Skip if marker is not valid
 
+            # Log marker information for on-screen display
+            cls._log(f"Marker {idx} ID", marker.id)
+            cls._log(f"Marker {idx} H_angle", int(marker.h_angle* RAD2DEG))
+            cls._log(f"Marker {idx} v_angle", int(marker.v_angle* RAD2DEG))
+            cls._log(f"Marker {idx} m_angle", int(marker.m_angle* RAD2DEG))
+            cls._log(f"Marker {idx} m_distance", marker.m_distance)
+            cls._log(f"Marker {idx} height", marker.height)
+            cls._log(f"Marker {idx} width", marker.width)
+
+        # Draw the video feed on the `pygame` screen
         frame = np.rot90(frame)
         frame = np.flipud(frame)
         frame = pygame.surfarray.make_surface(frame)
-
-        cls._update_log()
+       
         cls.SCREEN.blit(frame, cls.pos_img_in_screen)
 
+        # Render the logs on the screen
+        cls._update_log()
+
+        # Update the display
         pygame.display.update()
