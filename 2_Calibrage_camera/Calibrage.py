@@ -2,6 +2,7 @@
 import numpy as np
 import cv2 as cv
 import glob
+import os
 
 # termination criteria
 criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 30, 0.001)
@@ -13,8 +14,15 @@ objp[:,:2] = np.mgrid[0:6,0:4].T.reshape(-1,2)
 # Arrays to store object points and image points from all the images.
 objpoints = [] # 3d point in real world space
 imgpoints = [] # 2d points in image plane.
- 
-images = glob.glob('*.png')
+
+# Obtenir le chemin du répertoire où se trouve le script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construire le chemin vers le dossier d'images
+images_path = os.path.join(script_dir, 'DataB_Images', '*.png')
+
+images = glob.glob(images_path)
+gray = None
  #%%
 for fname in images:
     img = cv.imread(fname)
@@ -39,20 +47,28 @@ for fname in images:
  
 cv.destroyAllWindows()
 #%%
-ret, mtx, dist, rvecs, tvecs = cv.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
+if gray is not None:
+    ret, mtx, dist, rvecs, tvecs = cv.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
+else:
+    print("No image detected")
 
-img = cv.imread('opencv_frame_0.png')
-h,  w = img.shape[:2]
-newcameramtx, roi = cv.getOptimalNewCameraMatrix(mtx, dist, (w,h), 1, (w,h))
+countImg = 1
+for fname in images:
+    
+    img = cv.imread(fname)
+    h, w = img.shape[:2]
+    newcameramtx, roi = cv.getOptimalNewCameraMatrix(mtx, dist, (w, h), 1, (w, h))
 
-# undistort
-mapx, mapy = cv.initUndistortRectifyMap(mtx, dist, None, newcameramtx, (w,h), 5)
-dst = cv.remap(img, mapx, mapy, cv.INTER_LINEAR)
- 
-# crop the image
-x, y, w, h = roi
-dst = dst[y:y+h, x:x+w]
-cv.imwrite('calibresult.png', dst)
+    # undistort
+    mapx, mapy = cv.initUndistortRectifyMap(mtx, dist, None, newcameramtx, (w, h), 5)
+    dst = cv.remap(img, mapx, mapy, cv.INTER_LINEAR)
+
+    # crop the image
+    x, y, w, h = roi
+    dst = dst[y:y+h, x:x+w]
+    image_path = os.path.join(script_dir, 'calibresult_{}.png'.format(countImg))
+    cv.imwrite(image_path, dst)
+    countImg += 1
 
 mean_error = 0
 for i in range(len(objpoints)):
