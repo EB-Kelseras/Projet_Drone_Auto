@@ -14,7 +14,7 @@ locaddr = (host, port)
 
 # Create a UDP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-tello_address = ("127.0.0.1", 8889)  # The sending port
+tello_address = ("192.168.10.1", 8889)  # The sending port
 sock.bind(locaddr)
 
 

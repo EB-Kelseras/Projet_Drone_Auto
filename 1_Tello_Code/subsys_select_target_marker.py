@@ -17,6 +17,11 @@ class MarkerStatus:
         self.m_distance = 0
         self.height = 0
         self.width = 0
+        self.rvecs = (0,0)
+        self.tvecs = (0,0)
+        self.trash = (0,0)
+        self.R = [[0,0,0],[0,0,0],[0,0,0]]
+
     @classmethod
     def reset(cls):
         cls.id = -1
@@ -32,6 +37,10 @@ class MarkerStatus:
         cls.m_distance = 0
         cls.height = 0
         cls.width = 0
+        cls.rvecs =(0,0)
+        cls.tvecs=(0,0)
+        cls.trash=(0,0)
+        cls.R = [[0,0,0],[0,0,0],[0,0,0]]
 # subsystem
 
 
@@ -128,6 +137,31 @@ class SelectTargetMarker:
     @staticmethod
     def _length_segment(p1, p2):
         return int(np.sqrt((p1[0]-p2[0])**2 + (p1[1]-p2[1])**2))
+    
+    @staticmethod
+    def my_estimatePoseSingleMarkers(corners, marker_size, mtx, distortion):
+        '''
+        This will estimate the rvec and tvec for each of the marker corners detected by:
+        corners, ids, rejectedImgPoints = detector.detectMarkers(image)
+        corners - is an array of detected corners for each detected marker in the image
+        marker_size - is the size of the detected markers
+        mtx - is the camera matrix
+        distortion - is the camera distortion matrix
+        RETURN list of rvecs, tvecs, and trash (so that it corresponds to the old estimatePoseSingleMarkers())
+        '''
+        marker_points = np.array([[-marker_size / 2, marker_size / 2, 0],
+                                [marker_size / 2, marker_size / 2, 0],
+                                [marker_size / 2, -marker_size / 2, 0],
+                                [-marker_size / 2, -marker_size / 2, 0]], dtype=np.float32)
+        trash = []
+        rvecs = []
+        tvecs = []
+        for c in corners:
+            nada, R, t = cv2.solvePnP(marker_points, c, mtx, distortion, False, cv2.SOLVEPNP_IPPE_SQUARE)
+            rvecs.append(R)
+            tvecs.append(t)
+            trash.append(nada)
+        return rvecs, tvecs, trash,R
 
     @classmethod
     def draw(cls, frame, marker):
