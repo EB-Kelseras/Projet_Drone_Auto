@@ -58,6 +58,8 @@ for fname in images:
     img = cv.imread(fname)
     h, w = img.shape[:2]
     newcameramtx, roi = cv.getOptimalNewCameraMatrix(mtx, dist, (w, h), 1, (w, h))
+    print(newcameramtx)
+    print(dist)
 
     # undistort
     mapx, mapy = cv.initUndistortRectifyMap(mtx, dist, None, newcameramtx, (w, h), 5)
