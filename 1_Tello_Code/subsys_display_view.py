@@ -67,13 +67,13 @@ class Display:
                 continue  # Skip if marker is not valid
 
             # Log marker information for on-screen display
-            cls._log(f"Marker {idx} ID", marker.id)
-            cls._log(f"Marker {idx} H_angle", int(marker.h_angle* RAD2DEG))
-            cls._log(f"Marker {idx} v_angle", int(marker.v_angle* RAD2DEG))
-            cls._log(f"Marker {idx} m_angle", int(marker.m_angle* RAD2DEG))
-            cls._log(f"Marker {idx} m_distance", marker.m_distance)
-            cls._log(f"Marker {idx} height", marker.height)
-            cls._log(f"Marker {idx} width", marker.width)
+            cls._log(f"M {idx} ID", marker.id)
+            cls._log(f"M {idx} H_angle", int(marker.h_angle* RAD2DEG))
+            cls._log(f"M {idx} v_angle", int(marker.v_angle* RAD2DEG))
+            cls._log(f"M {idx} m_angle", int(marker.m_angle* RAD2DEG))
+            cls._log(f"M {idx} m_distance", marker.m_distance)
+            cls._log(f"M {idx} height", marker.height)
+            cls._log(f"M {idx} width", marker.width)
 
         # Draw the video feed on the `pygame` screen
         frame = np.rot90(frame)
