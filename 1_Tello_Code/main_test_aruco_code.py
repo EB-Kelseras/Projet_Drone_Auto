@@ -22,7 +22,9 @@ def setup():
 def run():
     # Run keyboard subsystem
     rc_status_1, key_status, mode_status = ReadKeyboard.run(rc_threshold=40)
-    frame = ReadCAM.run()
+  
+    frame = ReadCAMTello.run()
+
 
     # Detect markers in the frame
     markers_status, frame = MarkersDetected.run(frame)

@@ -21,7 +21,7 @@ class ENV:
     REAL = 0
     SIMULATION = 1
     DEBUG = 2
-    status = SIMULATION
+    status = REAL
 
 
 class RUN:

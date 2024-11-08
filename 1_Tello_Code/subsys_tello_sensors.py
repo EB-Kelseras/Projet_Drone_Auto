@@ -24,6 +24,8 @@ class TelloSensors:
 
     @classmethod
     def setup(cls):
+        print(f"Initializing TelloSensors with ENV.status = {ENV.status}")
+
         if ENV.status == ENV.SIMULATION:
             cls.__init_sim_env()
         elif ENV.status == ENV.REAL:
@@ -55,9 +57,7 @@ class TelloSensors:
         drone_status.roll = cls.TELLO.get_roll()
         drone_status.pitch = cls.TELLO.get_pitch()
         drone_status.yaw = cls.TELLO.get_yaw()
-        drone_status.x = cls.TELLO.get_debug_world_x()
-        drone_status.y = cls.TELLO.get_debug_world_y()
-        drone_status.z = cls.TELLO.get_debug_world_z()
+        drone_status.z = cls.TELLO.get_height()
 
         return cls.image(), drone_status
 
@@ -106,22 +106,19 @@ class TelloSensors:
 
     @classmethod
     def __init_real_env(cls):
-        # Init Tello object that interacts with the Tello drone
-        Tello.CONTROL_UDP_PORT_CLIENT = Tello.CONTROL_UDP_PORT
-        cls.TELLO = Tello("192.168.10.1")
-        cls.TELLO.connect()
-
-        # In case streaming is on. This happens when we quit this program without the escape key.
-        # self.tello.set_video_resolution(Tello.RESOLUTION_480P)
-        # self.tello.set_video_fps(Tello.FPS_30)
-        # self.tello.set_video_bitrate(Tello.BITRATE_4MBPS)
-
-        cls.TELLO.streamoff()
-        cls.TELLO.streamon()
+        """Initialize the Tello object for real-world use."""
+        print("Initializing Tello real environment...")
+        cls.TELLO = Tello("192.168.10.1")  # Connect to the real drone
         try:
-            cls.CAP = cls.TELLO.get_frame_read()
+            cls.TELLO.connect()
+            print("Tello connected.")
+            cls.TELLO.streamoff()  # Ensure the stream is off before turning it on
+            cls.TELLO.streamon()   # Turn on the video stream
+            print("Streaming started.")
+            cls.CAP = cls.TELLO.get_frame_read()  # Start reading the frames
             RUN.status = RUN.START
-        except:
+        except Exception as e:
+            print(f"Error during Tello connection: {e}")
             RUN.status = RUN.STOP
 
     @classmethod
