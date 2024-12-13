@@ -6,7 +6,7 @@
 	"image": "tschweitzer57/ros2:gtsam",
 
 	"workspaceFolder": "/home/workspace",
-	"workspaceMount": "source=${localWorkspaceFolder}4_gtsam_demo/python,target=/home/workspace,type=bind"
+	"workspaceMount": "source=${localWorkspaceFolder}/4_gtsam_demo/python,target=/home/workspace,type=bind"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
