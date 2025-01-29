@@ -1,3 +1,9 @@
+# IMPORTANT
+
+Change your tello.py file in your djitellopy library by the one in this file, otherwise you will have issues to connect to the drone or to the sim /!\
+
+
+
 # Tello: Drone Racing Code
 This program is based on the liberty [DJITelloPy](https://github.com/damiafuentes/DJITelloPy) and [pygame](https://www.pygame.org/).
 

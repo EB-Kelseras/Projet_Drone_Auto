@@ -1,0 +1,16 @@
+/workspaces/tello-ros2/workspace/install/tello_control/lib/tello_control/tello_control
+/workspaces/tello-ros2/workspace/install/tello_control/share/ament_index/resource_index/package_run_dependencies/tello_control
+/workspaces/tello-ros2/workspace/install/tello_control/share/ament_index/resource_index/parent_prefix_path/tello_control
+/workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/environment/ament_prefix_path.sh
+/workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/environment/ament_prefix_path.dsv
+/workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/environment/path.sh
+/workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/environment/path.dsv
+/workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/local_setup.bash
+/workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/local_setup.sh
+/workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/local_setup.zsh
+/workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/local_setup.dsv
+/workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/package.dsv
+/workspaces/tello-ros2/workspace/install/tello_control/share/ament_index/resource_index/packages/tello_control
+/workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/cmake/tello_controlConfig.cmake
+/workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/cmake/tello_controlConfig-version.cmake
+/workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/package.xml

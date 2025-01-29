@@ -1,0 +1,6 @@
+Invoking command in '/workspaces/tello-ros2/workspace/build/tello_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/tello-ros2/workspace/src/tello_control -DCMAKE_INSTALL_PREFIX=/workspaces/tello-ros2/workspace/install/tello_control
+Invoked command in '/workspaces/tello-ros2/workspace/build/tello_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/tello-ros2/workspace/src/tello_control -DCMAKE_INSTALL_PREFIX=/workspaces/tello-ros2/workspace/install/tello_control
+Invoking command in '/workspaces/tello-ros2/workspace/build/tello_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/tello-ros2/workspace/build/tello_control -- -j16 -l16
+Invoked command in '/workspaces/tello-ros2/workspace/build/tello_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/tello-ros2/workspace/build/tello_control -- -j16 -l16
+Invoking command in '/workspaces/tello-ros2/workspace/build/tello_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/tello-ros2/workspace/build/tello_control
+Invoked command in '/workspaces/tello-ros2/workspace/build/tello_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/tello-ros2/workspace/build/tello_control

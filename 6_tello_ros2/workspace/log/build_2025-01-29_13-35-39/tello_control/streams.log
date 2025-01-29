@@ -1,0 +1,22 @@
+[0.279s] Invoking command in '/workspaces/tello-ros2/workspace/build/tello_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/tello-ros2/workspace/install/tello:/opt/ros/humble /usr/bin/cmake --build /workspaces/tello-ros2/workspace/build/tello_control -- -j16 -l16
+[1.084s] [100%] Built target tello_control
+[1.244s] Invoked command in '/workspaces/tello-ros2/workspace/build/tello_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/tello-ros2/workspace/install/tello:/opt/ros/humble /usr/bin/cmake --build /workspaces/tello-ros2/workspace/build/tello_control -- -j16 -l16
+[1.353s] Invoking command in '/workspaces/tello-ros2/workspace/build/tello_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/tello-ros2/workspace/install/tello:/opt/ros/humble /usr/bin/cmake --install /workspaces/tello-ros2/workspace/build/tello_control
+[1.436s] -- Install configuration: ""
+[1.541s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/lib/tello_control/tello_control
+[1.717s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/ament_index/resource_index/package_run_dependencies/tello_control
+[1.780s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/ament_index/resource_index/parent_prefix_path/tello_control
+[1.818s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/environment/ament_prefix_path.sh
+[1.871s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/environment/ament_prefix_path.dsv
+[1.904s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/environment/path.sh
+[1.950s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/environment/path.dsv
+[1.992s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/local_setup.bash
+[2.027s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/local_setup.sh
+[2.061s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/local_setup.zsh
+[2.101s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/local_setup.dsv
+[2.139s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/package.dsv
+[2.298s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/ament_index/resource_index/packages/tello_control
+[2.342s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/cmake/tello_controlConfig.cmake
+[2.374s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/cmake/tello_controlConfig-version.cmake
+[2.409s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/package.xml
+[2.421s] Invoked command in '/workspaces/tello-ros2/workspace/build/tello_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/tello-ros2/workspace/install/tello:/opt/ros/humble /usr/bin/cmake --install /workspaces/tello-ros2/workspace/build/tello_control

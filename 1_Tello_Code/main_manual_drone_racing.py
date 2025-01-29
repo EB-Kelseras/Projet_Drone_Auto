@@ -10,7 +10,7 @@ from subsys_tello_actuators import TelloActuators
 
 
 def setup():
-    ENV.status = ENV.REAL
+    ENV.status = ENV.SIMULATION
     TelloSensors.setup()
     TelloActuators.setup(TelloSensors.TELLO)
     Display.setup()

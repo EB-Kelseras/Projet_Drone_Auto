@@ -1,0 +1,285 @@
+[0.087s] Invoking command in '/workspaces/tello-ros2/workspace/build/tello_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/tello-ros2/workspace/src/tello_msg -DCMAKE_INSTALL_PREFIX=/workspaces/tello-ros2/workspace/install/tello_msg
+[0.542s] -- The C compiler identification is GNU 11.4.0
+[0.922s] -- The CXX compiler identification is GNU 11.4.0
+[1.010s] -- Detecting C compiler ABI info
+[1.908s] -- Detecting C compiler ABI info - done
+[1.955s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.965s] -- Detecting C compile features
+[1.976s] -- Detecting C compile features - done
+[2.108s] -- Detecting CXX compiler ABI info
+[2.933s] -- Detecting CXX compiler ABI info - done
+[2.981s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.992s] -- Detecting CXX compile features
+[2.999s] -- Detecting CXX compile features - done
+[3.109s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.241s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.508s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.522s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.531s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.578s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.609s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[3.635s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[5.393s] -- Found ament_cmake_cppcheck: 0.12.11 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[5.399s] -- Found ament_cmake_cpplint: 0.12.11 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[5.404s] -- Found ament_cmake_uncrustify: 0.12.11 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[5.412s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[8.215s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[11.109s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.151s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[11.153s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[11.177s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[11.179s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[11.181s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[11.182s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[11.199s] -- Found PythonExtra: .so  
+[12.088s] -- Found ament_cmake_flake8: 0.12.11 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[12.092s] -- Found ament_cmake_pep257: 0.12.11 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[13.282s] -- Configuring done
+[16.843s] -- Generating done
+[17.895s] -- Build files have been written to: /workspaces/tello-ros2/workspace/build/tello_msg
+[17.901s] Invoked command in '/workspaces/tello-ros2/workspace/build/tello_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/tello-ros2/workspace/src/tello_msg -DCMAKE_INSTALL_PREFIX=/workspaces/tello-ros2/workspace/install/tello_msg
+[17.914s] Invoking command in '/workspaces/tello-ros2/workspace/build/tello_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/tello-ros2/workspace/build/tello_msg -- -j16 -l16
+[18.204s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[18.224s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[18.267s] [  4%] Built target ament_cmake_python_copy_tello_msg
+[18.571s] running egg_info
+[18.574s] creating tello_msg.egg-info
+[18.578s] writing tello_msg.egg-info/PKG-INFO
+[18.585s] writing dependency_links to tello_msg.egg-info/dependency_links.txt
+[18.594s] writing top-level names to tello_msg.egg-info/top_level.txt
+[18.604s] writing manifest file 'tello_msg.egg-info/SOURCES.txt'
+[18.631s] reading manifest file 'tello_msg.egg-info/SOURCES.txt'
+[18.675s] writing manifest file 'tello_msg.egg-info/SOURCES.txt'
+[18.713s] [  4%] Built target ament_cmake_python_build_tello_msg_egg
+[18.971s] [  4%] Built target tello_msg__cpp
+[19.038s] [  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[19.042s] [  8%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[19.064s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[19.234s] [ 12%] [32mBuilding C object CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.o[0m
+[19.244s] [ 14%] [32mBuilding C object CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.o[0m
+[19.251s] [ 17%] [32mBuilding C object CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.o[0m
+[19.473s] [ 19%] [32m[1mLinking C shared library libtello_msg__rosidl_generator_c.so[0m
+[19.619s] [ 21%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tello_msg/msg/tello_status__type_support.cpp.o[0m
+[19.632s] [ 23%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tello_msg/msg/tello_id__type_support.cpp.o[0m
+[19.645s] [ 25%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tello_msg/msg/tello_wifi_config__type_support.cpp.o[0m
+[19.808s] [ 25%] Built target tello_msg__rosidl_generator_c
+[19.853s] [ 27%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tello_msg/msg/detail/tello_status__type_support.cpp.o[0m
+[19.870s] [ 29%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tello_msg/msg/detail/tello_id__type_support.cpp.o[0m
+[19.890s] [ 31%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tello_msg/msg/detail/tello_wifi_config__type_support.cpp.o[0m
+[19.923s] [ 38%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[19.925s] [ 38%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[19.927s] [ 38%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[19.961s] [ 40%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tello_msg/msg/detail/dds_fastrtps/tello_status__type_support.cpp.o[0m
+[19.977s] [ 42%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tello_msg/msg/detail/dds_fastrtps/tello_id__type_support.cpp.o[0m
+[19.990s] [ 44%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tello_msg/msg/detail/dds_fastrtps/tello_wifi_config__type_support.cpp.o[0m
+[20.307s] [ 46%] [32m[1mLinking CXX shared library libtello_msg__rosidl_typesupport_cpp.so[0m
+[20.565s] [ 46%] Built target tello_msg__rosidl_typesupport_cpp
+[20.592s] [ 48%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/tello_msg/msg/tello_status__type_support.cpp.o[0m
+[20.598s] [ 51%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/tello_msg/msg/tello_id__type_support.cpp.o[0m
+[20.609s] [ 53%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/tello_msg/msg/tello_wifi_config__type_support.cpp.o[0m
+[20.765s] [ 55%] [32mBuilding C object CMakeFiles/tello_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tello_msg/msg/detail/tello_status__type_support.c.o[0m
+[20.774s] [ 59%] [32mBuilding C object CMakeFiles/tello_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tello_msg/msg/detail/tello_id__type_support.c.o[0m
+[20.778s] [ 59%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tello_msg/msg/detail/tello_status__type_support_c.cpp.o[0m
+[20.789s] [ 63%] [32mBuilding C object CMakeFiles/tello_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tello_msg/msg/detail/tello_wifi_config__type_support.c.o[0m
+[20.792s] [ 63%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tello_msg/msg/detail/tello_id__type_support_c.cpp.o[0m
+[20.808s] [ 65%] [32mBuilding CXX object CMakeFiles/tello_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tello_msg/msg/detail/tello_wifi_config__type_support_c.cpp.o[0m
+[20.822s] [ 70%] [32m[1mLinking CXX shared library libtello_msg__rosidl_typesupport_introspection_cpp.so[0m
+[20.825s] [ 70%] [32m[1mLinking CXX shared library libtello_msg__rosidl_typesupport_c.so[0m
+[21.031s] [ 72%] [32m[1mLinking CXX shared library libtello_msg__rosidl_typesupport_fastrtps_cpp.so[0m
+[21.227s] [ 72%] Built target tello_msg__rosidl_typesupport_c
+[21.247s] [ 74%] [32m[1mLinking C shared library libtello_msg__rosidl_typesupport_introspection_c.so[0m
+[21.324s] [ 74%] Built target tello_msg__rosidl_typesupport_introspection_cpp
+[21.523s] [ 74%] Built target tello_msg__rosidl_typesupport_fastrtps_cpp
+[21.570s] [ 74%] Built target tello_msg__rosidl_typesupport_introspection_c
+[21.808s] [ 76%] [32m[1mLinking CXX shared library libtello_msg__rosidl_typesupport_fastrtps_c.so[0m
+[22.248s] [ 76%] Built target tello_msg__rosidl_typesupport_fastrtps_c
+[22.372s] [ 76%] Built target tello_msg
+[22.525s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[23.457s] [ 78%] Built target tello_msg__py
+[23.586s] [ 80%] [32mBuilding C object CMakeFiles/tello_msg__rosidl_generator_py.dir/rosidl_generator_py/tello_msg/msg/_tello_status_s.c.o[0m
+[23.588s] [ 82%] [32mBuilding C object CMakeFiles/tello_msg__rosidl_generator_py.dir/rosidl_generator_py/tello_msg/msg/_tello_id_s.c.o[0m
+[23.591s] [ 85%] [32mBuilding C object CMakeFiles/tello_msg__rosidl_generator_py.dir/rosidl_generator_py/tello_msg/msg/_tello_wifi_config_s.c.o[0m
+[24.053s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/tello_msg/libtello_msg__rosidl_generator_py.so[0m
+[24.466s] [ 87%] Built target tello_msg__rosidl_generator_py
+[24.605s] [ 93%] [32mBuilding C object CMakeFiles/tello_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[24.606s] [ 93%] [32mBuilding C object CMakeFiles/tello_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[24.607s] [ 93%] [32mBuilding C object CMakeFiles/tello_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_c.c.o[0m
+[25.190s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/tello_msg/tello_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[25.255s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/tello_msg/tello_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[25.267s] [100%] [32m[1mLinking C shared library rosidl_generator_py/tello_msg/tello_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[25.455s] [100%] Built target tello_msg__rosidl_typesupport_c__pyext
+[25.470s] [100%] Built target tello_msg__rosidl_typesupport_introspection_c__pyext
+[25.493s] [100%] Built target tello_msg__rosidl_typesupport_fastrtps_c__pyext
+[25.828s] Invoked command in '/workspaces/tello-ros2/workspace/build/tello_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/tello-ros2/workspace/build/tello_msg -- -j16 -l16
+[25.869s] Invoking command in '/workspaces/tello-ros2/workspace/build/tello_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/tello-ros2/workspace/build/tello_msg
+[25.882s] -- Install configuration: ""
+[25.934s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/ament_index/resource_index/rosidl_interfaces/tello_msg
+[26.092s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg
+[26.144s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg
+[26.206s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail
+[26.290s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__functions.c
+[26.499s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__functions.h
+[26.717s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__struct.h
+[26.891s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__type_support.h
+[27.095s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__functions.c
+[27.251s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__functions.h
+[27.422s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__struct.h
+[27.587s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__type_support.h
+[27.751s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__functions.c
+[27.927s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__functions.h
+[28.123s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__struct.h
+[28.307s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__type_support.h
+[28.459s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/rosidl_generator_c__visibility_control.h
+[28.606s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/tello_id.h
+[28.734s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/tello_status.h
+[28.857s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/tello_wifi_config.h
+[28.970s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/library_path.sh
+[29.080s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/library_path.dsv
+[29.250s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_generator_c.so
+[29.431s] -- Set runtime path of "/workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_generator_c.so" to ""
+[29.451s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg
+[29.490s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg
+[29.545s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail
+[29.600s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__rosidl_typesupport_fastrtps_c.h
+[29.788s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__rosidl_typesupport_fastrtps_c.h
+[29.968s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__rosidl_typesupport_fastrtps_c.h
+[30.165s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[30.268s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_fastrtps_c.so
+[30.429s] -- Set runtime path of "/workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_fastrtps_c.so" to ""
+[30.453s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg
+[30.499s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg
+[30.548s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail
+[30.617s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__rosidl_typesupport_introspection_c.h
+[30.776s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__type_support.c
+[30.958s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__rosidl_typesupport_introspection_c.h
+[31.121s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__type_support.c
+[31.305s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__rosidl_typesupport_introspection_c.h
+[31.541s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__type_support.c
+[31.692s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[31.819s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_introspection_c.so
+[32.048s] -- Set runtime path of "/workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_introspection_c.so" to ""
+[32.088s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_c.so
+[32.302s] -- Set runtime path of "/workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_c.so" to ""
+[32.328s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg
+[32.373s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg
+[32.438s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail
+[32.501s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__builder.hpp
+[32.680s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__struct.hpp
+[32.894s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__traits.hpp
+[33.071s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__builder.hpp
+[33.259s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__struct.hpp
+[33.398s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__traits.hpp
+[33.583s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__builder.hpp
+[33.684s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__struct.hpp
+[33.847s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__traits.hpp
+[34.060s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/tello_id.hpp
+[34.187s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/tello_status.hpp
+[34.358s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/tello_wifi_config.hpp
+[34.516s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg
+[34.578s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg
+[34.644s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail
+[34.707s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/dds_fastrtps
+[34.816s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__rosidl_typesupport_fastrtps_cpp.hpp
+[34.976s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__rosidl_typesupport_fastrtps_cpp.hpp
+[35.097s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__rosidl_typesupport_fastrtps_cpp.hpp
+[35.280s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[35.458s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_fastrtps_cpp.so
+[35.634s] -- Set runtime path of "/workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[35.650s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg
+[35.700s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg
+[35.736s] -- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail
+[35.791s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__rosidl_typesupport_introspection_cpp.hpp
+[36.001s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__type_support.cpp
+[36.130s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__rosidl_typesupport_introspection_cpp.hpp
+[36.282s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__type_support.cpp
+[36.461s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__rosidl_typesupport_introspection_cpp.hpp
+[36.678s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__type_support.cpp
+[36.857s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_introspection_cpp.so
+[36.998s] -- Set runtime path of "/workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_introspection_cpp.so" to ""
+[37.008s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_cpp.so
+[37.165s] -- Set runtime path of "/workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_cpp.so" to ""
+[37.200s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/pythonpath.sh
+[37.295s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/pythonpath.dsv
+[37.394s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg-0.0.1-py3.10.egg-info
+[37.455s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg-0.0.1-py3.10.egg-info/dependency_links.txt
+[37.616s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg-0.0.1-py3.10.egg-info/PKG-INFO
+[37.773s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg-0.0.1-py3.10.egg-info/SOURCES.txt
+[37.928s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg-0.0.1-py3.10.egg-info/top_level.txt
+[38.114s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg
+[38.205s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/libtello_msg__rosidl_generator_py.so
+[38.354s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg
+[38.425s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_id.py
+[38.635s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_id_s.c
+[38.800s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_status.py
+[38.954s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_status_s.c
+[39.127s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_wifi_config.py
+[39.314s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_wifi_config_s.c
+[39.434s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/__init__.py
+[39.630s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[39.808s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[39.980s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[40.123s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/_tello_msg_s.ep.rosidl_typesupport_c.c
+[40.240s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/_tello_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[40.404s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/_tello_msg_s.ep.rosidl_typesupport_introspection_c.c
+[40.588s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/__init__.py
+[41.485s] Listing '/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg'...
+[41.487s] Compiling '/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/__init__.py'...
+[41.488s] Listing '/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg'...
+[41.489s] Compiling '/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/__init__.py'...
+[41.489s] Compiling '/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_id.py'...
+[41.490s] Compiling '/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_status.py'...
+[41.491s] Compiling '/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_wifi_config.py'...
+[41.579s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[41.832s] -- Set runtime path of "/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[41.935s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[42.171s] -- Set runtime path of "/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[42.277s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[42.581s] -- Set runtime path of "/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[42.618s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_generator_py.so
+[42.787s] -- Set runtime path of "/workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_generator_py.so" to ""
+[42.829s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/msg/TelloStatus.idl
+[42.977s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/msg/TelloID.idl
+[43.113s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/msg/TelloWifiConfig.idl
+[43.265s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/msg/TelloStatus.msg
+[43.441s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/msg/TelloID.msg
+[43.594s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/msg/TelloWifiConfig.msg
+[43.756s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/ament_index/resource_index/package_run_dependencies/tello_msg
+[43.965s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/ament_index/resource_index/parent_prefix_path/tello_msg
+[44.126s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/ament_prefix_path.sh
+[44.253s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/ament_prefix_path.dsv
+[44.363s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/path.sh
+[44.416s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/path.dsv
+[44.519s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/local_setup.bash
+[44.650s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/local_setup.sh
+[44.777s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/local_setup.zsh
+[44.873s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/local_setup.dsv
+[44.994s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/package.dsv
+[45.142s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/ament_index/resource_index/packages/tello_msg
+[45.262s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_generator_cExport.cmake
+[45.423s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_generator_cExport-noconfig.cmake
+[45.694s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[45.866s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[46.041s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_introspection_cExport.cmake
+[46.198s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[46.334s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_cExport.cmake
+[46.479s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_cExport-noconfig.cmake
+[46.679s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_generator_cppExport.cmake
+[46.844s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[47.010s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[47.182s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_introspection_cppExport.cmake
+[47.296s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[47.478s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_cppExport.cmake
+[47.679s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[47.878s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_generator_pyExport.cmake
+[48.055s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_generator_pyExport-noconfig.cmake
+[48.202s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/rosidl_cmake-extras.cmake
+[48.340s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[48.484s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[48.608s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[48.734s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/ament_cmake_export_targets-extras.cmake
+[48.881s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[49.026s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[49.150s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msgConfig.cmake
+[49.241s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msgConfig-version.cmake
+[49.354s] -- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/package.xml
+[49.437s] Invoked command in '/workspaces/tello-ros2/workspace/build/tello_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/tello-ros2/workspace/build/tello_msg
