@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tello_msg__py",
+		"source" : "/workspaces/tello-ros2/workspace/build/tello_msg/tello_msg__py"
+	}
+}

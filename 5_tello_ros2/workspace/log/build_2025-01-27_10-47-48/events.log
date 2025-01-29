@@ -1,0 +1,500 @@
+[0.000000] (-) TimerEvent: {}
+[0.002010] (tello_control) JobQueued: {'identifier': 'tello_control', 'dependencies': OrderedDict()}
+[0.002720] (tello_msg) JobQueued: {'identifier': 'tello_msg', 'dependencies': OrderedDict()}
+[0.002955] (tello) JobQueued: {'identifier': 'tello', 'dependencies': OrderedDict([('tello_msg', '/workspaces/tello-ros2/workspace/install/tello_msg')])}
+[0.003245] (tello_msg) JobStarted: {'identifier': 'tello_msg'}
+[0.023040] (tello_control) JobStarted: {'identifier': 'tello_control'}
+[0.040516] (tello_msg) JobProgress: {'identifier': 'tello_msg', 'progress': 'cmake'}
+[0.075044] (tello_msg) JobProgress: {'identifier': 'tello_msg', 'progress': 'build'}
+[0.084886] (tello_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/tello-ros2/workspace/build/tello_msg', '--', '-j16', '-l16'], 'cwd': '/workspaces/tello-ros2/workspace/build/tello_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('NV_LIBCUBLAS_VERSION', '12.0.2.224-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-12-0'), ('HOSTNAME', 'docker-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/bin/helpers/browser.sh'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.16.5-1'), ('HOME', '/root'), ('OLDPWD', '/workspaces/tello-ros2'), ('TERM_PROGRAM_VERSION', '1.96.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d2d937b4-03e4-4455-8a51-d67a6e9f1886.sock'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-0=12.0.1.104-1'), ('REMOTE_CONTAINERS', 'true'), ('CUDA_VERSION', '12.0.1'), ('_colcon_cd_root', '/root/ros2_install'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-48044e3c-8232-4ade-a406-fcfa554e636d.sock'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-0'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.0 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.0.1.140-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility'), ('NV_CUDA_LIB_VERSION', '12.0.1-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('TERM', 'xterm-256color'), ('NV_CUDA_CUDART_VERSION', '12.0.146-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/bin/remote-cli:/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-0=12.0.2.224-1'), ('NVARCH', 'x86_64'), ('REMOTE_CONTAINERS_SOCKETS', '[]'), ('DISPLAY', 'host.docker.internal:0.0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.16.5-1+cuda12.0'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NV_NVTX_VERSION', '12.0.140-1'), ('NV_LIBNPP_VERSION', '12.0.1.104-1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspaces/tello-ros2/workspace/build/tello_msg'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.16.5-1'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.109053] (-) TimerEvent: {}
+[0.109584] (tello_control) JobProgress: {'identifier': 'tello_control', 'progress': 'cmake'}
+[0.126927] (tello_control) JobProgress: {'identifier': 'tello_control', 'progress': 'build'}
+[0.133493] (tello_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/tello-ros2/workspace/build/tello_control', '--', '-j16', '-l16'], 'cwd': '/workspaces/tello-ros2/workspace/build/tello_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('NV_LIBCUBLAS_VERSION', '12.0.2.224-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-12-0'), ('HOSTNAME', 'docker-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/bin/helpers/browser.sh'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.16.5-1'), ('HOME', '/root'), ('OLDPWD', '/workspaces/tello-ros2'), ('TERM_PROGRAM_VERSION', '1.96.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d2d937b4-03e4-4455-8a51-d67a6e9f1886.sock'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-0=12.0.1.104-1'), ('REMOTE_CONTAINERS', 'true'), ('CUDA_VERSION', '12.0.1'), ('_colcon_cd_root', '/root/ros2_install'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-48044e3c-8232-4ade-a406-fcfa554e636d.sock'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-0'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.0 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.0.1.140-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility'), ('NV_CUDA_LIB_VERSION', '12.0.1-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('TERM', 'xterm-256color'), ('NV_CUDA_CUDART_VERSION', '12.0.146-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/bin/remote-cli:/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-0=12.0.2.224-1'), ('NVARCH', 'x86_64'), ('REMOTE_CONTAINERS_SOCKETS', '[]'), ('DISPLAY', 'host.docker.internal:0.0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.16.5-1+cuda12.0'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NV_NVTX_VERSION', '12.0.140-1'), ('NV_LIBNPP_VERSION', '12.0.1.104-1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspaces/tello-ros2/workspace/build/tello_control'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.16.5-1'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.209231] (-) TimerEvent: {}
+[0.310090] (-) TimerEvent: {}
+[0.410813] (-) TimerEvent: {}
+[0.437423] (tello_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tello_control\x1b[0m\n'}
+[0.510949] (-) TimerEvent: {}
+[0.611980] (-) TimerEvent: {}
+[0.713089] (-) TimerEvent: {}
+[0.729573] (tello_msg) StdoutLine: {'line': b'[  2%] Built target tello_msg__cpp\n'}
+[0.813282] (-) TimerEvent: {}
+[0.817884] (tello_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tello_msg__rosidl_generator_c\x1b[0m\n'}
+[0.913402] (-) TimerEvent: {}
+[0.941215] (tello_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tello_msg__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.013645] (-) TimerEvent: {}
+[1.024124] (tello_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tello_msg__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.049039] (tello_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tello_msg__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.113813] (-) TimerEvent: {}
+[1.215615] (-) TimerEvent: {}
+[1.316934] (-) TimerEvent: {}
+[1.393278] (tello_msg) StdoutLine: {'line': b'[ 12%] Built target tello_msg__rosidl_generator_c\n'}
+[1.417057] (-) TimerEvent: {}
+[1.518465] (-) TimerEvent: {}
+[1.620145] (-) TimerEvent: {}
+[1.626897] (tello_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tello_msg__rosidl_typesupport_c\x1b[0m\n'}
+[1.720288] (-) TimerEvent: {}
+[1.721162] (tello_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tello_msg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.732210] (tello_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tello_msg__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.820435] (-) TimerEvent: {}
+[1.921764] (-) TimerEvent: {}
+[1.949328] (tello_msg) StdoutLine: {'line': b'[ 23%] Built target tello_msg__rosidl_typesupport_cpp\n'}
+[2.021929] (-) TimerEvent: {}
+[2.062413] (tello_msg) StdoutLine: {'line': b'[ 44%] Built target tello_msg__rosidl_typesupport_c\n'}
+[2.065294] (tello_msg) StdoutLine: {'line': b'[ 44%] Built target tello_msg__rosidl_typesupport_introspection_cpp\n'}
+[2.122113] (-) TimerEvent: {}
+[2.200142] (tello_msg) StdoutLine: {'line': b'[ 55%] Built target tello_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[2.202502] (tello_msg) StdoutLine: {'line': b'[ 55%] Built target ament_cmake_python_copy_tello_msg\n'}
+[2.222273] (-) TimerEvent: {}
+[2.247350] (tello_control) StdoutLine: {'line': b'[100%] Built target tello_control\n'}
+[2.276755] (tello_msg) StdoutLine: {'line': b'[ 65%] Built target tello_msg__rosidl_typesupport_introspection_c\n'}
+[2.292127] (tello_control) CommandEnded: {'returncode': 0}
+[2.321809] (tello_control) JobProgress: {'identifier': 'tello_control', 'progress': 'install'}
+[2.322352] (-) TimerEvent: {}
+[2.333017] (tello_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/tello-ros2/workspace/build/tello_control'], 'cwd': '/workspaces/tello-ros2/workspace/build/tello_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('NV_LIBCUBLAS_VERSION', '12.0.2.224-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-12-0'), ('HOSTNAME', 'docker-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/bin/helpers/browser.sh'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.16.5-1'), ('HOME', '/root'), ('OLDPWD', '/workspaces/tello-ros2'), ('TERM_PROGRAM_VERSION', '1.96.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d2d937b4-03e4-4455-8a51-d67a6e9f1886.sock'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-0=12.0.1.104-1'), ('REMOTE_CONTAINERS', 'true'), ('CUDA_VERSION', '12.0.1'), ('_colcon_cd_root', '/root/ros2_install'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-48044e3c-8232-4ade-a406-fcfa554e636d.sock'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-0'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.0 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.0.1.140-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility'), ('NV_CUDA_LIB_VERSION', '12.0.1-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('TERM', 'xterm-256color'), ('NV_CUDA_CUDART_VERSION', '12.0.146-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/bin/remote-cli:/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-0=12.0.2.224-1'), ('NVARCH', 'x86_64'), ('REMOTE_CONTAINERS_SOCKETS', '[]'), ('DISPLAY', 'host.docker.internal:0.0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.16.5-1+cuda12.0'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NV_NVTX_VERSION', '12.0.140-1'), ('NV_LIBNPP_VERSION', '12.0.1.104-1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspaces/tello-ros2/workspace/build/tello_control'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.16.5-1'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.342964] (tello_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.417629] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/lib/tello_control/tello_control\n'}
+[2.422533] (-) TimerEvent: {}
+[2.523274] (-) TimerEvent: {}
+[2.551340] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/ament_index/resource_index/package_run_dependencies/tello_control\n'}
+[2.578911] (tello_msg) StdoutLine: {'line': b'[ 76%] Built target tello_msg__rosidl_typesupport_fastrtps_c\n'}
+[2.579798] (tello_msg) StdoutLine: {'line': b'running egg_info\n'}
+[2.582424] (tello_msg) StdoutLine: {'line': b'writing tello_msg.egg-info/PKG-INFO\n'}
+[2.586828] (tello_msg) StdoutLine: {'line': b'writing dependency_links to tello_msg.egg-info/dependency_links.txt\n'}
+[2.597147] (tello_msg) StdoutLine: {'line': b'writing top-level names to tello_msg.egg-info/top_level.txt\n'}
+[2.608437] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/ament_index/resource_index/parent_prefix_path/tello_control\n'}
+[2.623390] (-) TimerEvent: {}
+[2.634747] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/environment/ament_prefix_path.sh\n'}
+[2.647311] (tello_msg) StdoutLine: {'line': b"reading manifest file 'tello_msg.egg-info/SOURCES.txt'\n"}
+[2.664355] (tello_msg) StdoutLine: {'line': b'[ 76%] Built target tello_msg\n'}
+[2.677586] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/environment/ament_prefix_path.dsv\n'}
+[2.709478] (tello_msg) StdoutLine: {'line': b"writing manifest file 'tello_msg.egg-info/SOURCES.txt'\n"}
+[2.711699] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/environment/path.sh\n'}
+[2.723516] (-) TimerEvent: {}
+[2.746771] (tello_msg) StdoutLine: {'line': b'[ 76%] Built target ament_cmake_python_build_tello_msg_egg\n'}
+[2.748818] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/environment/path.dsv\n'}
+[2.785348] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/local_setup.bash\n'}
+[2.820318] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/local_setup.sh\n'}
+[2.823585] (-) TimerEvent: {}
+[2.854385] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/local_setup.zsh\n'}
+[2.864219] (tello_msg) StdoutLine: {'line': b'[ 78%] Built target tello_msg__py\n'}
+[2.884090] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/local_setup.dsv\n'}
+[2.921589] (tello_control) StdoutLine: {'line': b'-- Installing: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/package.dsv\n'}
+[2.923605] (-) TimerEvent: {}
+[2.955584] (tello_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tello_msg__rosidl_generator_py\x1b[0m\n'}
+[3.023808] (-) TimerEvent: {}
+[3.072757] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/ament_index/resource_index/packages/tello_control\n'}
+[3.117343] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/cmake/tello_controlConfig.cmake\n'}
+[3.123886] (-) TimerEvent: {}
+[3.147431] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/cmake/tello_controlConfig-version.cmake\n'}
+[3.189691] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_control/share/tello_control/package.xml\n'}
+[3.213118] (tello_control) CommandEnded: {'returncode': 0}
+[3.224048] (-) TimerEvent: {}
+[3.325611] (-) TimerEvent: {}
+[3.426497] (-) TimerEvent: {}
+[3.527498] (-) TimerEvent: {}
+[3.628667] (-) TimerEvent: {}
+[3.656098] (tello_msg) StdoutLine: {'line': b'[ 87%] Built target tello_msg__rosidl_generator_py\n'}
+[3.725709] (tello_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tello_msg__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.729222] (-) TimerEvent: {}
+[3.730233] (tello_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tello_msg__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[3.733421] (tello_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tello_msg__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[3.829509] (-) TimerEvent: {}
+[3.930453] (-) TimerEvent: {}
+[4.031230] (-) TimerEvent: {}
+[4.131889] (-) TimerEvent: {}
+[4.199187] (tello_msg) StdoutLine: {'line': b'[ 95%] Built target tello_msg__rosidl_typesupport_c__pyext\n'}
+[4.202713] (tello_msg) StdoutLine: {'line': b'[ 95%] Built target tello_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.232014] (-) TimerEvent: {}
+[4.246562] (tello_msg) StdoutLine: {'line': b'[100%] Built target tello_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[4.332164] (-) TimerEvent: {}
+[4.433371] (-) TimerEvent: {}
+[4.468304] (tello_control) JobEnded: {'identifier': 'tello_control', 'rc': 0}
+[4.533570] (-) TimerEvent: {}
+[4.583748] (tello_msg) CommandEnded: {'returncode': 0}
+[4.632715] (tello_msg) JobProgress: {'identifier': 'tello_msg', 'progress': 'install'}
+[4.633737] (-) TimerEvent: {}
+[4.646499] (tello_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/tello-ros2/workspace/build/tello_msg'], 'cwd': '/workspaces/tello-ros2/workspace/build/tello_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('NV_LIBCUBLAS_VERSION', '12.0.2.224-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-12-0'), ('HOSTNAME', 'docker-desktop'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/bin/helpers/browser.sh'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.16.5-1'), ('HOME', '/root'), ('OLDPWD', '/workspaces/tello-ros2'), ('TERM_PROGRAM_VERSION', '1.96.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d2d937b4-03e4-4455-8a51-d67a6e9f1886.sock'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-0=12.0.1.104-1'), ('REMOTE_CONTAINERS', 'true'), ('CUDA_VERSION', '12.0.1'), ('_colcon_cd_root', '/root/ros2_install'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-48044e3c-8232-4ade-a406-fcfa554e636d.sock'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-0'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.0 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.0.1.140-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility'), ('NV_CUDA_LIB_VERSION', '12.0.1-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('TERM', 'xterm-256color'), ('NV_CUDA_CUDART_VERSION', '12.0.146-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/bin/remote-cli:/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-0=12.0.2.224-1'), ('NVARCH', 'x86_64'), ('REMOTE_CONTAINERS_SOCKETS', '[]'), ('DISPLAY', 'host.docker.internal:0.0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.16.5-1+cuda12.0'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NV_NVTX_VERSION', '12.0.140-1'), ('NV_LIBNPP_VERSION', '12.0.1.104-1'), ('GZ_VERSION', 'harmonic'), ('PWD', '/workspaces/tello-ros2/workspace/build/tello_msg'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.16.5-1'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.670145] (tello_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.734071] (-) TimerEvent: {}
+[4.734888] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/ament_index/resource_index/rosidl_interfaces/tello_msg\n'}
+[4.762026] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg\n'}
+[4.806109] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg\n'}
+[4.834509] (-) TimerEvent: {}
+[4.855444] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail\n'}
+[4.910878] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__functions.c\n'}
+[4.934636] (-) TimerEvent: {}
+[4.935326] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__functions.h\n'}
+[4.975903] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__struct.h\n'}
+[5.034801] (-) TimerEvent: {}
+[5.037648] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__type_support.h\n'}
+[5.076846] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__functions.c\n'}
+[5.125870] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__functions.h\n'}
+[5.135051] (-) TimerEvent: {}
+[5.188748] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__struct.h\n'}
+[5.228452] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__type_support.h\n'}
+[5.235210] (-) TimerEvent: {}
+[5.280116] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__functions.c\n'}
+[5.332396] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__functions.h\n'}
+[5.335516] (-) TimerEvent: {}
+[5.375315] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__struct.h\n'}
+[5.419291] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__type_support.h\n'}
+[5.435744] (-) TimerEvent: {}
+[5.468476] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.496485] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/tello_id.h\n'}
+[5.536042] (-) TimerEvent: {}
+[5.550253] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/tello_status.h\n'}
+[5.606885] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/tello_wifi_config.h\n'}
+[5.636275] (-) TimerEvent: {}
+[5.677418] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/library_path.sh\n'}
+[5.722367] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/library_path.dsv\n'}
+[5.736397] (-) TimerEvent: {}
+[5.803026] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_generator_c.so\n'}
+[5.836597] (-) TimerEvent: {}
+[5.884762] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg\n'}
+[5.927501] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg\n'}
+[5.936663] (-) TimerEvent: {}
+[5.967727] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail\n'}
+[6.036879] (-) TimerEvent: {}
+[6.051337] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__rosidl_typesupport_fastrtps_c.h\n'}
+[6.103600] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__rosidl_typesupport_fastrtps_c.h\n'}
+[6.137002] (-) TimerEvent: {}
+[6.141773] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__rosidl_typesupport_fastrtps_c.h\n'}
+[6.193719] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.237337] (-) TimerEvent: {}
+[6.287295] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[6.337620] (-) TimerEvent: {}
+[6.392393] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg\n'}
+[6.436099] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg\n'}
+[6.438718] (-) TimerEvent: {}
+[6.509212] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail\n'}
+[6.539282] (-) TimerEvent: {}
+[6.587963] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__rosidl_typesupport_introspection_c.h\n'}
+[6.634077] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__type_support.c\n'}
+[6.639405] (-) TimerEvent: {}
+[6.678616] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__rosidl_typesupport_introspection_c.h\n'}
+[6.721122] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__type_support.c\n'}
+[6.739593] (-) TimerEvent: {}
+[6.764358] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__rosidl_typesupport_introspection_c.h\n'}
+[6.815456] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__type_support.c\n'}
+[6.839708] (-) TimerEvent: {}
+[6.842731] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.885732] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_introspection_c.so\n'}
+[6.939845] (-) TimerEvent: {}
+[7.011750] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_c.so\n'}
+[7.039984] (-) TimerEvent: {}
+[7.073474] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg\n'}
+[7.114516] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg\n'}
+[7.140109] (-) TimerEvent: {}
+[7.151304] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail\n'}
+[7.197283] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__builder.hpp\n'}
+[7.240257] (-) TimerEvent: {}
+[7.266134] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__struct.hpp\n'}
+[7.322089] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__traits.hpp\n'}
+[7.340446] (-) TimerEvent: {}
+[7.378455] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__builder.hpp\n'}
+[7.412962] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__struct.hpp\n'}
+[7.440621] (-) TimerEvent: {}
+[7.467312] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__traits.hpp\n'}
+[7.525836] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__builder.hpp\n'}
+[7.540758] (-) TimerEvent: {}
+[7.594865] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__struct.hpp\n'}
+[7.641003] (-) TimerEvent: {}
+[7.663214] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__traits.hpp\n'}
+[7.699987] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/tello_id.hpp\n'}
+[7.738232] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/tello_status.hpp\n'}
+[7.741087] (-) TimerEvent: {}
+[7.774940] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/tello_wifi_config.hpp\n'}
+[7.813174] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg\n'}
+[7.841281] (-) TimerEvent: {}
+[7.864724] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg\n'}
+[7.921549] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail\n'}
+[7.941393] (-) TimerEvent: {}
+[7.974269] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/dds_fastrtps\n'}
+[8.041647] (-) TimerEvent: {}
+[8.065075] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.131361] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.141749] (-) TimerEvent: {}
+[8.174173] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.232084] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.241871] (-) TimerEvent: {}
+[8.327101] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.342009] (-) TimerEvent: {}
+[8.405676] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg\n'}
+[8.442236] (-) TimerEvent: {}
+[8.448525] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg\n'}
+[8.515911] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail\n'}
+[8.542387] (-) TimerEvent: {}
+[8.612356] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.642681] (-) TimerEvent: {}
+[8.668604] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_id__type_support.cpp\n'}
+[8.743003] (-) TimerEvent: {}
+[8.749098] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.820003] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_status__type_support.cpp\n'}
+[8.843186] (-) TimerEvent: {}
+[8.874771] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.923795] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/include/tello_msg/tello_msg/msg/detail/tello_wifi_config__type_support.cpp\n'}
+[8.943310] (-) TimerEvent: {}
+[8.995372] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[9.043481] (-) TimerEvent: {}
+[9.114584] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_typesupport_cpp.so\n'}
+[9.143816] (-) TimerEvent: {}
+[9.245126] (-) TimerEvent: {}
+[9.255009] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/pythonpath.sh\n'}
+[9.308185] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/pythonpath.dsv\n'}
+[9.345416] (-) TimerEvent: {}
+[9.350831] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg-0.0.1-py3.10.egg-info\n'}
+[9.398844] (tello_msg) StdoutLine: {'line': b'-- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[9.445665] (-) TimerEvent: {}
+[9.546835] (-) TimerEvent: {}
+[9.580355] (tello_msg) StdoutLine: {'line': b'-- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[9.646970] (-) TimerEvent: {}
+[9.747974] (-) TimerEvent: {}
+[9.786223] (tello_msg) StdoutLine: {'line': b'-- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[9.848203] (-) TimerEvent: {}
+[9.949113] (-) TimerEvent: {}
+[9.962465] (tello_msg) StdoutLine: {'line': b'-- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[10.049305] (-) TimerEvent: {}
+[10.100367] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg\n'}
+[10.135944] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/libtello_msg__rosidl_generator_py.so\n'}
+[10.149466] (-) TimerEvent: {}
+[10.152171] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg\n'}
+[10.211781] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_id.py\n'}
+[10.249646] (-) TimerEvent: {}
+[10.275981] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_id_s.c\n'}
+[10.336828] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_status.py\n'}
+[10.349753] (-) TimerEvent: {}
+[10.377500] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_status_s.c\n'}
+[10.430355] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_wifi_config.py\n'}
+[10.449910] (-) TimerEvent: {}
+[10.486788] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/_tello_wifi_config_s.c\n'}
+[10.537592] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg/__init__.py\n'}
+[10.550088] (-) TimerEvent: {}
+[10.573779] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.607480] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.638753] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.650197] (-) TimerEvent: {}
+[10.668216] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/_tello_msg_s.ep.rosidl_typesupport_c.c\n'}
+[10.706123] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/_tello_msg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.750532] (-) TimerEvent: {}
+[10.751270] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/_tello_msg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.804186] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/__init__.py\n'}
+[10.850658] (-) TimerEvent: {}
+[10.951702] (-) TimerEvent: {}
+[11.052599] (-) TimerEvent: {}
+[11.153708] (-) TimerEvent: {}
+[11.247949] (tello_msg) StdoutLine: {'line': b"Listing '/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg'...\n"}
+[11.251070] (tello_msg) StdoutLine: {'line': b"Listing '/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/msg'...\n"}
+[11.253805] (-) TimerEvent: {}
+[11.337492] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[11.353953] (-) TimerEvent: {}
+[11.454811] (-) TimerEvent: {}
+[11.556024] (-) TimerEvent: {}
+[11.568928] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[11.656147] (-) TimerEvent: {}
+[11.756947] (-) TimerEvent: {}
+[11.800165] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages/tello_msg/tello_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[11.857194] (-) TimerEvent: {}
+[11.958047] (-) TimerEvent: {}
+[12.007107] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/lib/libtello_msg__rosidl_generator_py.so\n'}
+[12.058503] (-) TimerEvent: {}
+[12.104280] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/msg/TelloStatus.idl\n'}
+[12.151097] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/msg/TelloID.idl\n'}
+[12.158606] (-) TimerEvent: {}
+[12.194381] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/msg/TelloWifiConfig.idl\n'}
+[12.232309] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/msg/TelloStatus.msg\n'}
+[12.258770] (-) TimerEvent: {}
+[12.296465] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/msg/TelloID.msg\n'}
+[12.351375] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/msg/TelloWifiConfig.msg\n'}
+[12.358889] (-) TimerEvent: {}
+[12.400364] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/ament_index/resource_index/package_run_dependencies/tello_msg\n'}
+[12.459089] (-) TimerEvent: {}
+[12.487248] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/ament_index/resource_index/parent_prefix_path/tello_msg\n'}
+[12.525179] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/ament_prefix_path.sh\n'}
+[12.543627] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/ament_prefix_path.dsv\n'}
+[12.556369] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/path.sh\n'}
+[12.559164] (-) TimerEvent: {}
+[12.572827] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/environment/path.dsv\n'}
+[12.590517] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/local_setup.bash\n'}
+[12.619528] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/local_setup.sh\n'}
+[12.659347] (-) TimerEvent: {}
+[12.667726] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/local_setup.zsh\n'}
+[12.701875] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/local_setup.dsv\n'}
+[12.738203] (tello_msg) StdoutLine: {'line': b'-- Installing: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/package.dsv\n'}
+[12.759555] (-) TimerEvent: {}
+[12.860612] (-) TimerEvent: {}
+[12.903097] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/ament_index/resource_index/packages/tello_msg\n'}
+[12.960772] (-) TimerEvent: {}
+[13.000185] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_generator_cExport.cmake\n'}
+[13.061017] (-) TimerEvent: {}
+[13.068635] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.161226] (-) TimerEvent: {}
+[13.189740] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.261424] (-) TimerEvent: {}
+[13.270745] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.342674] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.361570] (-) TimerEvent: {}
+[13.394359] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.461781] (-) TimerEvent: {}
+[13.491621] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_cExport.cmake\n'}
+[13.543594] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.561870] (-) TimerEvent: {}
+[13.615633] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_generator_cppExport.cmake\n'}
+[13.662175] (-) TimerEvent: {}
+[13.718913] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.762388] (-) TimerEvent: {}
+[13.787401] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.862569] (-) TimerEvent: {}
+[13.897005] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.962761] (-) TimerEvent: {}
+[13.971059] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[14.052507] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_cppExport.cmake\n'}
+[14.062857] (-) TimerEvent: {}
+[14.088169] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[14.158410] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_generator_pyExport.cmake\n'}
+[14.162972] (-) TimerEvent: {}
+[14.209323] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/export_tello_msg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[14.248166] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[14.263113] (-) TimerEvent: {}
+[14.284809] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.311118] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.340551] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.363202] (-) TimerEvent: {}
+[14.377284] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.407134] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[14.441745] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[14.459590] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msgConfig.cmake\n'}
+[14.463287] (-) TimerEvent: {}
+[14.476882] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/cmake/tello_msgConfig-version.cmake\n'}
+[14.515633] (tello_msg) StdoutLine: {'line': b'-- Up-to-date: /workspaces/tello-ros2/workspace/install/tello_msg/share/tello_msg/package.xml\n'}
+[14.559890] (tello_msg) CommandEnded: {'returncode': 0}
+[14.573993] (-) TimerEvent: {}
+[14.675228] (-) TimerEvent: {}
+[14.776564] (-) TimerEvent: {}
+[14.877842] (-) TimerEvent: {}
+[14.978912] (-) TimerEvent: {}
+[15.079549] (-) TimerEvent: {}
+[15.180098] (-) TimerEvent: {}
+[15.281023] (-) TimerEvent: {}
+[15.388686] (-) TimerEvent: {}
+[15.489733] (-) TimerEvent: {}
+[15.590964] (-) TimerEvent: {}
+[15.692078] (-) TimerEvent: {}
+[15.793013] (-) TimerEvent: {}
+[15.893526] (-) TimerEvent: {}
+[15.994211] (-) TimerEvent: {}
+[16.095137] (-) TimerEvent: {}
+[16.195875] (-) TimerEvent: {}
+[16.296760] (-) TimerEvent: {}
+[16.397934] (-) TimerEvent: {}
+[16.499079] (-) TimerEvent: {}
+[16.600507] (-) TimerEvent: {}
+[16.704549] (-) TimerEvent: {}
+[16.795161] (tello_msg) JobEnded: {'identifier': 'tello_msg', 'rc': 0}
+[16.817732] (-) TimerEvent: {}
+[16.818437] (tello) JobStarted: {'identifier': 'tello'}
+[16.918072] (-) TimerEvent: {}
+[17.018809] (-) TimerEvent: {}
+[17.119559] (-) TimerEvent: {}
+[17.220438] (-) TimerEvent: {}
+[17.322093] (-) TimerEvent: {}
+[17.423134] (-) TimerEvent: {}
+[17.524057] (-) TimerEvent: {}
+[17.625497] (-) TimerEvent: {}
+[17.726971] (-) TimerEvent: {}
+[17.827801] (-) TimerEvent: {}
+[17.928927] (-) TimerEvent: {}
+[18.030070] (-) TimerEvent: {}
+[18.131001] (-) TimerEvent: {}
+[18.231547] (-) TimerEvent: {}
+[18.332704] (-) TimerEvent: {}
+[18.433755] (-) TimerEvent: {}
+[18.534435] (-) TimerEvent: {}
+[18.636084] (-) TimerEvent: {}
+[18.737197] (-) TimerEvent: {}
+[18.838102] (-) TimerEvent: {}
+[18.939389] (-) TimerEvent: {}
+[19.040675] (-) TimerEvent: {}
+[19.141737] (-) TimerEvent: {}
+[19.242666] (-) TimerEvent: {}
+[19.351968] (-) TimerEvent: {}
+[19.453147] (-) TimerEvent: {}
+[19.554436] (-) TimerEvent: {}
+[19.655654] (-) TimerEvent: {}
+[19.756812] (-) TimerEvent: {}
+[19.858325] (-) TimerEvent: {}
+[19.959286] (-) TimerEvent: {}
+[20.060377] (-) TimerEvent: {}
+[20.161275] (-) TimerEvent: {}
+[20.262222] (-) TimerEvent: {}
+[20.363127] (-) TimerEvent: {}
+[20.464060] (-) TimerEvent: {}
+[20.565393] (-) TimerEvent: {}
+[20.666754] (-) TimerEvent: {}
+[20.767915] (-) TimerEvent: {}
+[20.868997] (-) TimerEvent: {}
+[20.970085] (-) TimerEvent: {}
+[20.975664] (tello) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/tello', 'build', '--build-base', '/workspaces/tello-ros2/workspace/build/tello/build', 'install', '--record', '/workspaces/tello-ros2/workspace/build/tello/install.log', '--install-scripts', '$base/lib/tello', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspaces/tello-ros2/workspace/src/tello', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'NV_LIBCUBLAS_VERSION': '12.0.2.224-1', 'NV_CUDA_COMPAT_PACKAGE': 'cuda-compat-12-0', 'HOSTNAME': 'docker-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/workspaces/tello-ros2/workspace/install/tello_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/bin/helpers/browser.sh', 'NV_LIBNCCL_PACKAGE_VERSION': '2.16.5-1', 'HOME': '/root', 'OLDPWD': '/workspaces/tello-ros2', 'TERM_PROGRAM_VERSION': '1.96.3', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-d2d937b4-03e4-4455-8a51-d67a6e9f1886.sock', 'ROS_PYTHON_VERSION': '3', 'COLORTERM': 'truecolor', 'NV_LIBNPP_PACKAGE': 'libnpp-12-0=12.0.1.104-1', 'REMOTE_CONTAINERS': 'true', 'CUDA_VERSION': '12.0.1', '_colcon_cd_root': '/root/ros2_install', 'DEBUGINFOD_URLS': '', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-48044e3c-8232-4ade-a406-fcfa554e636d.sock', 'NV_LIBCUBLAS_PACKAGE_NAME': 'libcublas-12-0', 'NVIDIA_REQUIRE_CUDA': 'cuda>=12.0 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NV_LIBCUSPARSE_VERSION': '12.0.1.140-1', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility', 'NV_CUDA_LIB_VERSION': '12.0.1-1', 'NV_LIBNCCL_PACKAGE_NAME': 'libnccl2', 'TERM': 'xterm-256color', 'NV_CUDA_CUDART_VERSION': '12.0.146-1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/vscode/vscode-server/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/bin/remote-cli:/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'NV_LIBCUBLAS_PACKAGE': 'libcublas-12-0=12.0.2.224-1', 'NVARCH': 'x86_64', 'REMOTE_CONTAINERS_SOCKETS': '[]', 'DISPLAY': 'host.docker.internal:0.0', 'NV_LIBNCCL_PACKAGE': 'libnccl2=2.16.5-1+cuda12.0', 'NVIDIA_PRODUCT_NAME': 'CUDA', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/workspaces/tello-ros2/workspace/install/tello_msg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'NV_NVTX_VERSION': '12.0.140-1', 'NV_LIBNPP_VERSION': '12.0.1.104-1', 'GZ_VERSION': 'harmonic', 'PWD': '/workspaces/tello-ros2/workspace/build/tello', 'PYTHONPATH': '/workspaces/tello-ros2/workspace/build/tello/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/tello-ros2/workspace/install/tello/lib/python3.10/site-packages:/workspaces/tello-ros2/workspace/install/tello_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'NCCL_VERSION': '2.16.5-1', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspaces/tello-ros2/workspace/install/tello_msg'}, 'shell': False}
+[21.070252] (-) TimerEvent: {}
+[21.171179] (-) TimerEvent: {}
+[21.272179] (-) TimerEvent: {}
+[21.373247] (-) TimerEvent: {}
+[21.474249] (-) TimerEvent: {}
+[21.575319] (-) TimerEvent: {}
+[21.676257] (-) TimerEvent: {}
+[21.777045] (-) TimerEvent: {}
+[21.877571] (-) TimerEvent: {}
+[21.978358] (-) TimerEvent: {}
+[22.079426] (-) TimerEvent: {}
+[22.180238] (-) TimerEvent: {}
+[22.281203] (-) TimerEvent: {}
+[22.382265] (-) TimerEvent: {}
+[22.483319] (-) TimerEvent: {}
+[22.584595] (-) TimerEvent: {}
+[22.619160] (tello) StderrLine: {'line': b"/usr/local/lib/python3.10/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[22.621993] (tello) StderrLine: {'line': b'  warnings.warn(\n'}
+[22.684834] (-) TimerEvent: {}
+[22.710275] (tello) StdoutLine: {'line': b'running egg_info\n'}
+[22.715034] (tello) StdoutLine: {'line': b'writing ../../build/tello/tello.egg-info/PKG-INFO\n'}
+[22.720446] (tello) StdoutLine: {'line': b'writing dependency_links to ../../build/tello/tello.egg-info/dependency_links.txt\n'}
+[22.725727] (tello) StdoutLine: {'line': b'writing entry points to ../../build/tello/tello.egg-info/entry_points.txt\n'}
+[22.737017] (tello) StdoutLine: {'line': b'writing requirements to ../../build/tello/tello.egg-info/requires.txt\n'}
+[22.747883] (tello) StdoutLine: {'line': b'writing top-level names to ../../build/tello/tello.egg-info/top_level.txt\n'}
+[22.784997] (-) TimerEvent: {}
+[22.808660] (tello) StdoutLine: {'line': b"reading manifest file '../../build/tello/tello.egg-info/SOURCES.txt'\n"}
+[22.885257] (-) TimerEvent: {}
+[22.900726] (tello) StdoutLine: {'line': b"adding license file 'LICENSE.txt'\n"}
+[22.951615] (tello) StdoutLine: {'line': b"writing manifest file '../../build/tello/tello.egg-info/SOURCES.txt'\n"}
+[22.959730] (tello) StdoutLine: {'line': b'running build\n'}
+[22.962386] (tello) StdoutLine: {'line': b'running build_py\n'}
+[22.985505] (-) TimerEvent: {}
+[23.025762] (tello) StdoutLine: {'line': b'running install\n'}
+[23.027708] (tello) StdoutLine: {'line': b'running install_lib\n'}
+[23.085773] (-) TimerEvent: {}
+[23.186676] (-) TimerEvent: {}
+[23.207262] (tello) StdoutLine: {'line': b'running install_data\n'}
+[23.286811] (-) TimerEvent: {}
+[23.301267] (tello) StdoutLine: {'line': b'running install_egg_info\n'}
+[23.328967] (tello) StdoutLine: {'line': b"removing '/workspaces/tello-ros2/workspace/install/tello/lib/python3.10/site-packages/tello-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[23.387145] (-) TimerEvent: {}
+[23.472244] (tello) StdoutLine: {'line': b'Copying ../../build/tello/tello.egg-info to /workspaces/tello-ros2/workspace/install/tello/lib/python3.10/site-packages/tello-0.1.0-py3.10.egg-info\n'}
+[23.487270] (-) TimerEvent: {}
+[23.588363] (-) TimerEvent: {}
+[23.689382] (-) TimerEvent: {}
+[23.790101] (-) TimerEvent: {}
+[23.891509] (-) TimerEvent: {}
+[23.992495] (-) TimerEvent: {}
+[24.020195] (tello) StdoutLine: {'line': b'running install_scripts\n'}
+[24.092588] (-) TimerEvent: {}
+[24.158781] (tello) StdoutLine: {'line': b'Installing tello script to /workspaces/tello-ros2/workspace/install/tello/lib/tello\n'}
+[24.176067] (tello) StdoutLine: {'line': b"writing list of installed files to '/workspaces/tello-ros2/workspace/build/tello/install.log'\n"}
+[24.192762] (-) TimerEvent: {}
+[24.201776] (tello) CommandEnded: {'returncode': 0}
+[24.293059] (-) TimerEvent: {}
+[24.394515] (-) TimerEvent: {}
+[24.495793] (-) TimerEvent: {}
+[24.596989] (-) TimerEvent: {}
+[24.698225] (-) TimerEvent: {}
+[24.759510] (tello) JobEnded: {'identifier': 'tello', 'rc': 0}
+[24.776094] (-) EventReactorShutdown: {}

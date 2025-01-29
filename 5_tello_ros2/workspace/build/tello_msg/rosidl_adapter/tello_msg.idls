@@ -1,0 +1,3 @@
+/workspaces/tello-ros2/workspace/build/tello_msg/rosidl_adapter/tello_msg:msg/TelloStatus.idl
+/workspaces/tello-ros2/workspace/build/tello_msg/rosidl_adapter/tello_msg:msg/TelloID.idl
+/workspaces/tello-ros2/workspace/build/tello_msg/rosidl_adapter/tello_msg:msg/TelloWifiConfig.idl
